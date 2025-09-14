@@ -14,4 +14,19 @@ to be doing that are obvious from reading this. Because I don't know if there's 
 when I look at the core implementation, it would be useful to reference the appropriate places in the implementation
 details where it can find the information as it walks through each step in the core implementation or in the refinement.
 
-# /tasks
+# /tasks   
+
+## How to run the application
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the application:
+   ```bash
+   ng serve
+   ```
+3. Open your browser to `http://localhost:4200`.
+
+## test
+npx ng test --no-watch --browsers=ChromeHeadless 

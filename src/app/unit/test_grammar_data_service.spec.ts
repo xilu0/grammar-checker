@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { GrammarDataService } from '../../services/grammar-data.service';
-import { GrammarPoint } from '../../models/grammar.models';
+import { GrammarDataService } from '../services/grammar-data.service';
+import { GrammarPoint } from '../models/grammar.models';
 
 describe('GrammarDataService', () => {
   let service: GrammarDataService;

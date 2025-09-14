@@ -1,11 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { LessonComponent } from './components/lesson/lesson.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.html',
-  standalone: false,
+  standalone: true,
+  imports: [LessonComponent],
+  template: '<app-lesson></app-lesson>',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('grammar-checker');
 }
