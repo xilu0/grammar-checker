@@ -1,6 +1,6 @@
 # Feature Specification: English Grammar Practice SPA
 
-**Feature Branch**: `001-grammar-checker`  
+**Feature Branch**: `001-develop-a-single`  
 **Created**: 2025-09-14  
 **Status**: Draft  
 **Input**: User description: "develop a Single-Page Application (SPA) that can help me practice English grammar. The application should be structured as a series of slides. The content should cover all grammatical knowledge points, progressing from simple to complex. For each grammar point, provide: A clear and easy-to-understand explanation. A simple example sentence. A complex example sentence."
