@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Grammar Points",
+  "description": "A collection of grammar points for the English Grammar Practice SPA.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "A unique identifier for the grammar point."
+      },
+      "title": {
+        "type": "string",
+        "description": "The name of the grammar point."
+      },
+      "explanation": {
+        "type": "string",
+        "description": "A clear and easy-to-understand explanation of the grammar rule."
+      },
+      "examples": {
+        "type": "array",
+        "description": "A list of example sentences.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "sentence": {
+              "type": "string",
+              "description": "The example sentence."
+            },
+            "type": {
+              "type": "string",
+              "enum": ["simple", "complex"],
+              "description": "The type of example."
+            }
+          },
+          "required": ["sentence", "type"]
+        }
+      },
+      "order": {
+        "type": "number",
+        "description": "The order of the grammar point in the curriculum."
+      }
+    },
+    "required": ["id", "title", "explanation", "examples", "order"]
+  }
+}
