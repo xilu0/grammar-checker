@@ -1,50 +1,76 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Angular SPA Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Component-First Architecture
+- Each functional module exists as an independent component.
+- Components must be highly cohesive and loosely coupled.
+- Follow the Angular style guide and best practices.
+- Prefer standalone components over NgModules.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. State Management
+- Use NgRx/Akita/Signal Store for global state management.
+- Use Angular Signals or RxJS for local state.
+- State changes must be traceable and debuggable.
+- Follow the unidirectional data flow principle.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-First Development
+- Unit test coverage must be at least 80%.
+- Use Jasmine/Karma for unit testing.
+- Use Cypress/Playwright for E2E testing.
+- The CI/CD pipeline must include a testing stage.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Performance & Optimization
+- Implement lazy loading and code splitting.
+- Use the OnPush change detection strategy.
+- Optimize bundle size; initial load should not exceed 500KB.
+- Core Web Vitals metrics must be met.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Accessibility & i18n
+- Comply with WCAG 2.1 AA level.
+- Use Angular i18n for internationalization.
+- Use semantic HTML and ARIA labels.
+- Support keyboard navigation.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### TypeScript Configuration
+- Enable strict mode (strict: true).
+- No implicit any.
+- Strict null checks.
+- Enforce code style with ESLint + Prettier.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### API Integration
+- Use HttpClient and interceptors.
+- Unified error handling mechanism.
+- Define API response types.
+- Manage API endpoints with environment variables.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Routing & Navigation
+- Implement permission control with route guards.
+- Optimize preloading strategy.
+- Support for breadcrumb navigation.
+- Deep linking and state preservation.
+
+## Quality Gates
+
+### Code Review Requirements
+- Reviewed by at least one team member.
+- Automated code quality checks must pass.
+- No unresolved linting errors.
+- Update the change log.
+
+### CI/CD Pipeline
+- Build → Unit Test → E2E Test → Deploy.
+- Production deployment requires manual approval.
+- Automatic version number management.
+- Rollback mechanism in place.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- The Constitution has priority over other practices.
+- Modifications require a 2/3 majority approval from the team.
+- Review and update quarterly.
+- New members must study this document upon onboarding.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-01-15 | **Last Amended**: 2025-01-15
