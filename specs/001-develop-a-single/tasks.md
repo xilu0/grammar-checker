@@ -69,7 +69,7 @@
 
 ## Phase 3.5: Polish
 - [x] T019 Manually test application using `quickstart.md`.
-- [ ] T020 Verify initial load performance (< 500KB).
+- [x] T020 Verify initial load performance (< 500KB).
 
 ## Dependencies
 - Tests (T003-T010) before implementation (T011-T017)
