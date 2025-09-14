@@ -1,0 +1,50 @@
+[
+  {
+    "id": "present-simple",
+    "title": "Present Simple Tense",
+    "explanation": "The present simple tense is used to describe habits, unchanging situations, general truths, and fixed arrangements.",
+    "examples": [
+      {
+        "sentence": "I work in London.",
+        "type": "simple"
+      },
+      {
+        "sentence": "The sun rises in the east.",
+        "type": "complex"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "present-continuous",
+    "title": "Present Continuous Tense",
+    "explanation": "The present continuous tense is used for actions happening at the moment of speaking.",
+    "examples": [
+      {
+        "sentence": "I am reading a book.",
+        "type": "simple"
+      },
+      {
+        "sentence": "She is studying to become a doctor.",
+        "type": "complex"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "past-simple",
+    "title": "Past Simple Tense",
+    "explanation": "The past simple tense is used to talk about a completed action in a time before now.",
+    "examples": [
+      {
+        "sentence": "I went to the cinema yesterday.",
+        "type": "simple"
+      },
+      {
+        "sentence": "He played football when he was a child.",
+        "type": "complex"
+      }
+    ],
+    "order": 3
+  }
+]
