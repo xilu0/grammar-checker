@@ -30,3 +30,6 @@ details where it can find the information as it walks through each step in the c
 
 ## test
 npx ng test --no-watch --browsers=ChromeHeadless 
+
+# release
+cp -a dist/grammar-checker/browser/* docs
