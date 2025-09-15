@@ -32,7 +32,7 @@ details where it can find the information as it walks through each step in the c
 npx ng test --no-watch --browsers=ChromeHeadless 
 
 # release
-ng build --base-href=/docs/
+ng build --base-href=/grammar-checker/
 cp -a dist/grammar-checker/browser/* docs/
 
 https://xilu0.github.io/grammar-checker/
