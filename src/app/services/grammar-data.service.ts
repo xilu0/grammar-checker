@@ -11,6 +11,6 @@ export class GrammarDataService {
   constructor(private http: HttpClient) { }
 
   getGrammarPoints(): Observable<GrammarPoint[]> {
-    return this.http.get<GrammarPoint[]>('/assets/grammar.json');
+    return this.http.get<GrammarPoint[]>('assets/grammar.json');
   }
 }
